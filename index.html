@@ -65,7 +65,7 @@
 <body>
 
 <header>
-  <img src="portrait.jpg" alt="Behrad Ehsani portrait" />
+  <img src="assets/portrait.jpg" alt="Behrad Ehsani portrait" />
   <nav>
     <a href="#about">About / درباره</a>
     <a href="#services">Services / خدمات</a>
@@ -75,8 +75,8 @@
 </header>
 
 <div class="lang-toggle">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('fa')">فارسی</button>
+  <a href="/index.html"><button>English</button></a>
+  <a href="/fa/index.html"><button>فارسی</button></a>
 </div>
 
 <div id="en" class="container ltr">
@@ -151,7 +151,7 @@
 
 </div>
 
-<div id="fa" class="container rtl hidden">
+<div id="fa" class="hidden" class="container rtl hidden">
   
 <section id="about">
   <h2>🌟 درباره من</h2>
@@ -187,12 +187,7 @@
 
 </div>
 
-<script>
-  function setLang(lang) {
-    document.getElementById('en').classList.toggle('hidden', lang !== 'en');
-    document.getElementById('fa').classList.toggle('hidden', lang !== 'fa');
-  }
-</script>
+
 
 </body>
 </html>
